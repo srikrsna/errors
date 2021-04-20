@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package errors;
+
+option go_package = "github.com/srikrsna/errors/gen/errors;errpb";
+
+message RevisionMismatch {
+  int64 currrent_revision = 1;
+  int64 request_revision = 2;
+}
